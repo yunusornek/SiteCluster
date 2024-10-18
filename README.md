@@ -36,7 +36,7 @@ Bu araç, web sitelerini CSS dosyalarını kullanarak kümeler ve analiz eder. W
 1. **Depoyu Klonlayın**
 
    ```bash
-   git clone https://github.com/kullaniciadi/website-clustering-tool.git
+   git clone https://github.com/yunusornek/SiteCluster.git
    cd website-clustering-tool
    ```
 
