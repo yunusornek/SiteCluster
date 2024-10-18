@@ -1,3 +1,74 @@
+<details>
+<summary>[EN] Website Clustering and Analysis Tool</summary>
+# Website Clustering and Analysis Tool
+
+#### The purpose of this project is to discover websites with the same templates among a list of URLs or subdomains.
+
+This tool clusters and analyzes websites based on their CSS files. It asynchronously downloads website content, extracts CSS file names, calculates the Jaccard similarity between sites, and groups similar sites into clusters. Additionally, it supports filtering websites based on finding a keyword in the page title or entire HTML content.
+
+## Table of Contents
+
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Basic Usage](#basic-usage)
+  - [Examples](#examples)
+- [Arguments](#arguments)
+- [Output](#output)
+- [Logging](#logging)
+- [License](#license)
+
+## Features
+
+- **CSS-Based Clustering**: Extracts CSS files from websites and clusters them based on Jaccard similarity.
+- **Keyword Filtering**: Filters websites based on a keyword found in the title or HTML content.
+- **Subdomain Discovery**: Queries the subdomains of a target domain using `subfinder`.
+- **Real-Time Progress Display**: Shows real-time progress and clustering results in the terminal.
+- **JSON Output**: Saves clustering results in a `clusters.json` file for analysis.
+
+## Requirements
+
+- **Python 3.7+**
+- **Subfinder**: Required when using the `-d` or `--domain` option.  
+  You can install it from [ProjectDiscovery/subfinder](https://github.com/projectdiscovery/subfinder).
+
+
+## Installation
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yunusornek/SiteCluster.git
+   cd website-clustering-tool
+   ```
+
+2. **Create a Virtual Environment (Optional)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # For Windows: `venv\Scripts\activate`
+   ```
+
+3. **Install the Required Packages**
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+### Basic Usage
+
+```bash
+python script.py -dl urls.txt
+```
+
+
+</details>
+
+<details>
+<summary>[TR] Web Sitesi Kümeleme ve Analiz Aracı</summary>
 # Web Sitesi Kümeleme ve Analiz Aracı
 
 #### Bu projenin amacı bir url listsi veya subdomainler arasındaki aynı template sahip websitelerini keşfetmektir.
@@ -141,3 +212,4 @@ python script.py -dl urls.txt
 ## Loglama
 
 Araç, önemli olayları ve hataları `error.log` dosyasına kaydeder.
+</details>
