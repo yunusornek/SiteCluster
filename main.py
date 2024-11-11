@@ -287,6 +287,18 @@ async def process_sites(file_path: str, concurrency: int, threshold: float,
 
     save_clusters_to_json(clusters, filtered_clusters)
 
+BANNER = r"""
+   _____ _ __          ________           __           
+  / ___/(_) /____     / ____/ /_  _______/ /____  _____
+  \__ \/ / __/ _ \   / /   / / / / / ___/ __/ _ \/ ___/
+ ___/ / / /_/  __/  / /___/ / /_/ (__  ) /_/  __/ /    
+/____/_/\__/\___/   \____/_/\__,_/____/\__/\___/_/     
+                                                       
+"""
+
+def print_banner():
+    print(BANNER)
+
 # Ana iş parçacığı
 async def main():
     stop_event = asyncio.Event()
@@ -307,6 +319,7 @@ async def main():
     )
 
 if __name__ == "__main__":
+    print_banner()
     parser = argparse.ArgumentParser(
         description="Web sitelerini kümelendirme ve analiz aracı.",
         epilog="Örnek kullanım: python script.py -dl urls.txt -t 20 -th 0.6 -f 'erzurum' -T",
