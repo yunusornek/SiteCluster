@@ -61,7 +61,7 @@ This tool clusters and analyzes websites based on their CSS files. It asynchrono
 ### Basic Usage
 
 ```bash
-python script.py -dl urls.txt
+python main.py -dl urls.txt
 ```
 
 
@@ -131,7 +131,7 @@ Bu araç, web sitelerini CSS dosyalarını kullanarak kümeler ve analiz eder. W
 ### Temel Kullanım
 
 ```bash
-python script.py -dl urls.txt
+python main.py -dl urls.txt
 ```
 
 ### Örnekler
@@ -139,43 +139,43 @@ python script.py -dl urls.txt
 - **Varsayılan ayarlarla web sitelerini kümeler**
 
   ```bash
-  python script.py -dl urls.txt
+  python main.py -dl urls.txt
   ```
 
 - **Bir alan adının alt alan adlarını kümeler**
 
   ```bash
-  python script.py -d example.com
+  python main.py -d example.com
   ```
 
 - **Eşzamanlılık değerini 20 iş parçacığı olarak ayarlayın**
 
   ```bash
-  python script.py -dl urls.txt -t 20
+  python main.py -dl urls.txt -t 20
   ```
 
 - **Benzerlik eşik değerini 0.6 olarak ayarlayın**
 
   ```bash
-  python script.py -dl urls.txt -th 0.6
+  python main.py -dl urls.txt -th 0.6
   ```
 
 - **Başlıkta "ankara" kelimesini içeren siteleri filtreleyin**
 
   ```bash
-  python script.py -dl urls.txt -f "ankara" -T
+  python main.py -dl urls.txt -f "ankara" -T
   ```
 
 - **HTML içeriğinde "ankara" kelimesini içeren siteleri filtreleyin**
 
   ```bash
-  python script.py -dl urls.txt -f "ankara" -H
+  python main.py -dl urls.txt -f "ankara" -H
   ```
 
 - **İstek zaman aşımını 15 saniye olarak ayarlayın**
 
   ```bash
-  python script.py -dl urls.txt -to 15
+  python main.py -dl urls.txt -to 15
   ```
 
 ## Argümanlar
