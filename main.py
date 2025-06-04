@@ -322,7 +322,7 @@ if __name__ == "__main__":
     print_banner()
     parser = argparse.ArgumentParser(
         description="Web sitelerini kümelendirme ve analiz aracı.",
-        epilog="Örnek kullanım: python script.py -dl urls.txt -t 20 -th 0.6 -f 'erzurum' -T",
+        epilog="Örnek kullanım: python main.py -dl urls.txt -t 20 -th 0.6 -f 'erzurum' -T",
         formatter_class=argparse.RawDescriptionHelpFormatter
     )
 
